@@ -1,3 +1,5 @@
+import HashTable from '../hash-table/HashTable';
+
 export default class BinaryTreeNode {
 
   constructor(value = null) {
@@ -5,6 +7,8 @@ export default class BinaryTreeNode {
     this.right = null;
     this.parent = null;
     this.value = value;
+    // Any node related meta information may be stored here.
+    this.meta = new HashTable();
   }
 
   get leftHeight() {

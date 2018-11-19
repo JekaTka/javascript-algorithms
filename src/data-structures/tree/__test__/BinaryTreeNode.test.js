@@ -197,16 +197,16 @@ describe('BinaryTreeNode', () => {
     expect(node2.toString()).toBe('[object Object]');
   });
 
-//   it('should be possible to attach meta information to the node', () => {
-//     const redNode = new BinaryTreeNode(1);
-//     const blackNode = new BinaryTreeNode(2);
+  it('should be possible to attach meta information to the node', () => {
+    const redNode = new BinaryTreeNode(1);
+    const blackNode = new BinaryTreeNode(2);
 
-//     redNode.meta.set('color', 'red');
-//     blackNode.meta.set('color', 'black');
+    redNode.meta.set('color', 'red');
+    blackNode.meta.set('color', 'black');
 
-//     expect(redNode.meta.get('color')).toBe('red');
-//     expect(blackNode.meta.get('color')).toBe('black');
-//   });
+    expect(redNode.meta.get('color')).toBe('red');
+    expect(blackNode.meta.get('color')).toBe('black');
+  });
 
   it('should detect right uncle', () => {
     const grandParent = new BinaryTreeNode('grand-parent');
